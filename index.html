@@ -1,81 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Pink</title>
 </head>
 <body>
 	<div class="wrapper">
-		<header>
-			<div class="logo">PINK</div>
-			<a href="#" class="top-menu"></a>
-			<ul>
-				<li>Информация</li>
-				<li>Возможности</li>
-				<li>Отзывы</li>
-				<li>Стоимость</li>
-			</ul>
-			<div class="slogan">
-				<h1>Взгляните на жизнь иначе!</h1>
+		<header class="page-header">
+			<div class="page-header__logo">
+				<a class="page-header__link" href="index.html">
+					<img class="page-header__img" src="#" alt="PINK">
+				</a>
 			</div>
+			<a class="mobile-menu-open mobile-menu-open--active" href="#"></a>
+			<nav class="mobile-menu-nav">
+				<ul class="mobile-menu">
+					<li class="mobile-menu__item">Информация</li>
+					<li class="mobile-menu__item">Возможности</li>
+					<li class="mobile-menu__item">Отзывы</li>
+					<li class="mobile-menu__item">Стоимость</li>
+				</ul>
+			</nav>
+			<h1 class="page-header__slogan">Взгляните на жизнь иначе!</h1>
 		</header>
-			<div class="download-app">
-				<button class="download">Скачать приложение</button><br>
-				<a href="#">Скачать приложение</a><br>
-				<a href="#"><img src="#" alt="#"></a>
-				<a href="#"><img src="#" alt="#"></a>
-				<a href="#"><img src="#" alt="#"></a>
-				<p>Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
-			</div>
-			<div class="features">
-					<h2>Устали от серости мегаполиса?</h2>
-					<h2>Нам есть, что вам предложить!</h2>
-			</div>
-			<div class="advantages">
-				<h3>Поднимает настроение</h3>
-				<p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-				<h3>Меняет мир вокруг</h3>
-				<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-				<h3>Заводит новых друзей</h3>
-				<p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-			</div>
-			<div class="feedback-slider">
-				<div class="slide1">
-					<h3>Николай Петров</h3>
-					<p>"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
-				</div>
-				<div class="slide2">
-				</div>
-				<div class="slide3">
-				</div>
-			</div>
-			<div class="buying-options-slider">
-				<div class="slide1">
-				</div>
-				<div class="slide2">
-					<header>
-						<img src="#" alt="top">
-						<h2>Стандарт</h2>
-						<p>3.99 usd</p>
-					</header>
-					<ul>
-						<li>Розовый фильтр</li>
-						<li>Смайлики</li>
-						<li>Комментарии</li>
-					</ul>
-				</div>
-				<div class="slide3">
-				</div>
-			</div>
-		<footer>
-			<h2>Остались вопросы? Свяжитесь с нами!</h2>
-			<h3>Звоните:</h3>
-			<p>8 (800) 1000 900</p>
-			<h3>Пишите:</h3>
-			<p><a href="mailto:hello@pinkapp.ru">hello@pinkapp.ru</a></p>
-			<h3>Приезжайте в гости:</h3>
-			<p>Санкт-Петербург, Невский проспект, д. 20</p>
-			<div class="map-image"></div>
+		<div class="download-app">
+			<a class="download-app__link" href="#">Скачать приложение</a><br>
+			<a class="download-app__link-mobile" href="#"><img class="download-app__link-mobile-img" src="#" alt="ios"></a>
+			<a class="download-app__link-mobile" href="#"><img class="download-app__link-mobile-img" src="#" alt="android"></a>
+			<a class="download-app__link-mobile" href="#"><img class="download-app__link-mobile-img" src="#" alt="win"></a>
+			<p class="download-app__info">Доступно для iPhone, iPad, Android, Windows Phone, Mac OS, Windows 8</p>
+		</div>
+		<div class="features">
+				<h2 class="features__item">Устали от серости мегаполиса?</h2>
+				<h2 class="features__item">Нам есть, что вам предложить!</h2>
+		</div>
+		<div class="advantages">
+			<h3 class="advantages__item">Поднимает настроение</h3>
+			<p class="advantages__item-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+			<h3 class="advantages__item">Меняет мир вокруг</h3>
+			<p class="advantages__item-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+			<h3 class="advantages__item">Заводит новых друзей</h3>
+			<p class="advantages__item-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+		</div>
+		<article class="feedback-slider">
+			<section class="feedback-slider__item">
+				<h3 class="feedback-slider__item-person">Николай Петров</h3>
+				<p class="feedback-slider__item-info">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще япознакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
+			</section>
+			<section class="feedback-slider__item">
+			</section>
+			<section class="feedback-slider__item">
+			</section>
+		</article>
+		<article class="buying-options-slider">
+			<section class="buying-options-slider__item">
+			</section>
+			<section class="buying-options-slider__item">
+				<header class="buying-options-slider__item-header">
+					<img class="buying-options-slider__item-img" src="#" alt="top">
+					<h2 class="buying-options-slider__item-title">Стандарт</h2>
+					<p class="buying-options-slider__item-price">3.99 usd</p>
+				</header>
+				<ul class="buying-options-slider__item-list">
+					<li class="buying-options-slider__item-list-item">Розовый фильтр</li>
+					<li class="buying-options-slider__item-list-item">Смайлики</li>
+					<li class="buying-options-slider__item-list-item">Комментарии</li>
+				</ul>
+			</section>
+			<section class="buying-options-slider__item">
+			</section>
+		</article>
+		<footer class="page-footer">
+			<h2 class="page-footer__heading">Остались вопросы? Свяжитесь с нами!</h2>
+			<h3 class="page-footer">Звоните:</h3>
+			<p class="page-footer__phone">8 (800) 1000 900</p>
+			<h3 class="page-footer__heading">Пишите:</h3>
+			<p class="page-footer__email"><a href="mailto:hello@pinkapp.ru">hello@pinkapp.ru</a></p>
+			<h3 class="page-footer__heading">Приезжайте в гости:</h3>
+			<p class="page-footer__address">Санкт-Петербург, Невский проспект, д. 20</p>
+			<div class="page-footer__map-image"></div>
 		</footer>
 	</div>
 </body>
