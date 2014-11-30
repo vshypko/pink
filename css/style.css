@@ -1,0 +1,242 @@
+@font-face {
+  font-family: "Gotham Rounded Book";
+  src: url("../font/gotham-rounded-book.otf") format("opentype");
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page-header {
+  height: 460px;
+  overflow: hidden;
+  color: #fff;
+  background: #1d2631 url("../img/bg-header.jpg") no-repeat;
+}
+.page-header__logo {
+  height: 45px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.page-header__link {
+  padding-left: 5px;
+  font-family: "Gotham Rounded Book", sans-serif;
+  font-size: 32px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+}
+.page-header__slogan {
+  width: 250px;
+  margin: 0 auto;
+  padding: 21px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.mobile-menu-open__img {
+  float: right;
+  padding: 10px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.download-app {
+  height: 220px;
+  padding: 25px;
+  color: #fff;
+  background-color: #1d2631;
+}
+.download-app__mobile {
+  padding: 0 18px;
+  text-align: center;
+}
+.download-app__link {
+  display: block;
+  margin: 0 auto;
+  padding: 13px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
+.download-app__link-mobile {
+  display: inline-block;
+  margin: 15px;
+}
+.download-app__info {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.features {
+  padding: 10px;
+  background-color: #fff;
+}
+.features__item {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: #283645;
+}
+
+.advantages {
+  height: 725px;
+  overflow: hidden;
+  padding: 65px 25px 0;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+.advantages__item {
+  font-size: 18px;
+  font-weight: 700;
+}
+.advantages__item-info {
+  padding-bottom: 5px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8em;
+}
+.advantages__item-img {
+  padding-top: 18px;
+}
+
+.feedback-slider {
+  height: 330px;
+  padding: 25px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+.feedback-slider__item-person {
+  font-size: 18px;
+  font-weight: 700;
+}
+.feedback-slider__item-info {
+  font-size: 14px;
+  font-weight: 300;
+}
+.feedback-slider__controls, .buying-options-slider__controls {
+  display: block;
+  padding: 10px;
+}
+.feedback-slider__controls-link, .buying-options-slider__controls-link {
+  margin: 5px;
+}
+.feedback-slider__controls-img--off, .buying-options-slider__controls-img--off {
+  padding: 3px;
+}
+
+.buying-options-slider-container {
+  padding: 20px;
+  padding-top: 70px;
+  background-color: #f2f2f2;
+}
+
+.buying-options-slider {
+  text-transform: uppercase;
+}
+.buying-options-slider__item-header {
+  padding-bottom: 50px;
+  background-color: #283645;
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+.buying-options-slider__item-img {
+  float: left;
+}
+.buying-options-slider__item-title {
+  display: block;
+  margin: 0;
+  padding-top: 15px;
+  padding-right: 65px;
+  font-size: 18px;
+  font-weight: 00;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+}
+.buying-options-slider__item-price {
+  display: block;
+  float: right;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-right: 85px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+}
+.buying-options-slider__item-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.buying-options-slider__item-list-item {
+  padding: 20px;
+  font-size: 14px;
+  background-color: #fff;
+  border-right: 2px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5;
+}
+.buying-options-slider__item-list-item:after {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon-yes.png") no-repeat;
+  content: "";
+}
+.buying-options-slider__controls {
+  padding-top: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.page-footer {
+  height: 200px;
+  text-align: center;
+}
+.page-footer__title {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #283645;
+}
+.page-footer__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+.page-footer__phone, .page-footer__email-link, .page-footer__address, .page-footer__email {
+  margin: 0;
+  padding: 0 20px 25px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856;
+}
+.page-footer__email-link {
+  text-decoration: none;
+}
+.page-footer__map-image {
+  height: 100%;
+  background: green url("../img/bg-footer-map.jpg") 0 100% no-repeat;
+}
