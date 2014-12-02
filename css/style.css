@@ -84,8 +84,24 @@ body {
 }
 
 .features {
-  padding: 10px;
+  position: relative;
+  padding: 10px 10px 40px;
   background-color: #fff;
+  z-index: -2;
+  overflow: hidden;
+}
+.features:after {
+  content: "";
+  position: absolute;
+  width: 335px;
+  height: 150px;
+  top: 90%;
+  left: 0;
+  z-index: -1;
+  background: #f2f2f2 0 0;
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
 }
 .features__item {
   font-size: 24px;
@@ -97,7 +113,7 @@ body {
 .advantages {
   height: 725px;
   overflow: hidden;
-  padding: 65px 25px 0;
+  padding: 20px 25px 0;
   text-align: center;
   background-color: #f2f2f2;
 }
