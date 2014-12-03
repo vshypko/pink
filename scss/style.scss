@@ -7,15 +7,21 @@ $advantages-bg-color: #f2f2f2;
 $buying-options-list-border-color: #e5e5e5;
 $footer-font-color: #d22856;
 $features-item-color: #283645;
+$font-header-color: #fff;
+$mobile-menu-border-color: #000;
+$mobile-menu-border-shadow: rgba(72,84,97,.15);
+$top-menu-bg-color: rgba(0,0,0,.3);
 $font-size-basic: 14px;
 $font-size-large: 18px;
 $font-size-x-large: 24px;
 $font-weight-light: 300;
 $font-weight-regular: 700;
 $font-weight-bold: 900;
+$line-height-item: 30px;
 $wrapper-width: 320px;
 $header-height: 460px;
 $margin-center: 0 auto;
+
 
 body {
 	box-sizing: border-box;
@@ -32,19 +38,19 @@ body {
 .page-header {
 	height: $header-height;
 	overflow: hidden;
-	color: #fff;
+	color: $font-header-color;
 	background: $header-bg-color url("../img/bg-header.jpg") no-repeat;
 	&__logo {
 		height: 45px;
 		padding: 10px;
-		background-color: rgba(0,0,0,.3);
+		background-color: $top-menu-bg-color;
 	}
 	&__link {
 		padding-left: 5px;
 		font-family: "Gotham Rounded Book", sans-serif;
 		font-size: 32px;
 		line-height: 50px;
-		color: #fff;
+		color: $font-header-color;
 		text-decoration: none;
 	}
 	&__slogan {
@@ -63,13 +69,29 @@ body {
 }
 
 .mobile-menu {
-	display: none;
+	position: absolute;
+	width: 320px;
+	margin: 0;
+	padding: 0;
+	&__item {
+		display: none;
+		padding: 15px;
+		font-size: $font-size-large;
+		font-weight: $font-weight-bold;
+		line-height: 32px;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: $features-item-color;
+		box-shadow: 0 1px 5px $mobile-menu-border-shadow;
+		list-style: none;
+		border-bottom: 1px solid $mobile-menu-border-color;
+	}
 }
 
 .download-app {
 	height: 220px;
 	padding: 25px;
-	color: #fff;
+	color: $font-header-color;
 	background-color: $header-bg-color;
 	&__mobile {
 		padding: 0 18px;
@@ -81,10 +103,10 @@ body {
 		padding: 13px;
 		font-size: $font-size-large;
 		font-weight: $font-weight-regular;
-		color: #fff;
+		color: $font-header-color;
 		text-align: center;
 		text-decoration: none;
-		border: 2px solid #fff;
+		border: 2px solid $font-header-color;
 		border-radius: 25px;
 		&-mobile {
 			display: inline-block;
@@ -100,27 +122,26 @@ body {
 
 .features {
 	position: relative;
-	padding: 10px 10px 40px;
-	background-color: #fff;
 	z-index: -2;
 	overflow: hidden;
-		&:after {
-		content: "";
+	padding: 10px 10px 55px;
+	background-color: $font-header-color;
+	&:after {
 		position: absolute;
-		width: 335px;
-		height: 150px;
 		top: 90%;
 		left: 0;
 		z-index: -1;
+		width: 335px;
+		height: 150px;
 		background: $advantages-bg-color 0 0;
+		content: "";
 		transform: rotate(-5deg);
 	}
-
 	&__item {
 		font-size: $font-size-x-large;
 		font-weight: $font-weight-light;
-		text-align: center;
 		color: $features-item-color;
+		text-align: center;
 	}
 }
 
@@ -130,7 +151,6 @@ body {
 	padding: 20px 25px 0;
 	text-align: center;
 	background-color: $advantages-bg-color;
-
 	&__item {
 		font-size: $font-size-large;
 		font-weight: $font-weight-regular;
@@ -147,11 +167,14 @@ body {
 }
 
 .feedback-slider {
+	position: relative;
+	z-index: -2;
 	height: 330px;
-	padding: 25px;
-	line-height: 30px;
+	overflow: hidden;
+	padding: 20px;
+	line-height: $line-height-item;
 	text-align: center;
-	background-color: #fff;
+	background-color: $font-header-color;
 	&__item-person {
 		font-size: $font-size-large;
 		font-weight: $font-weight-regular;
@@ -170,11 +193,22 @@ body {
 			padding: 3px;
 		}
 	}
+	&:after {
+		position: absolute;
+		top: 90%;
+		left: 0;
+		z-index: -1;
+		width: 335px;
+		height: 150px;
+		background: $advantages-bg-color 0 0;
+		content: "";
+		transform: rotate(-5deg);
+	}
 }
 
 .buying-options-slider-container {
 	padding: 20px;
-	padding-top: 70px;
+	padding-top: 40px;
 	background-color: $advantages-bg-color;
 }
 
@@ -196,8 +230,8 @@ body {
 		padding-right: 65px;
 		font-size: $font-size-large;
 		font-weight: 00;
-		line-height: 30px;
-		color: #fff;
+		line-height: $line-height-item;
+		color: $font-header-color;
 		text-align: center;
 	}
 	&__item-price {
@@ -208,27 +242,45 @@ body {
 		padding-right: 85px;
 		font-size: $font-size-x-large;
 		font-weight: $font-weight-light;
-		line-height: 30px;
-		color: #fff;
+		line-height: $line-height-item;
+		color: $font-header-color;
 	}
 	&__item-list {
 		margin: 0;
 		padding: 0;
 		list-style: none;
 		&-item {
+			position: relative;
 			padding: 20px;
 			font-size: $font-size-basic;
-			background-color: #fff;
+			background-color: $font-header-color;
 			border-right: 2px solid $buying-options-list-border-color;
 			border-bottom: 2px solid $buying-options-list-border-color;
 			border-left: 2px solid $buying-options-list-border-color;
-			&:after {
-				display: block;
-				float: right;
-				width: 30px;
-				height: 30px;
-				background: url("../img/icon-yes.png") no-repeat;
-				content: "";
+			&:hover {
+				background-color: $buying-options-list-border-color;
+			}
+			&--off {
+				&:after {
+					position: absolute;
+					top: 15px;
+					right: 15px;
+					width: 30px;
+					height: 30px;
+					background: url("../img/icon-no.png") no-repeat;
+					content: "";
+				}
+			}
+			&--on {
+				&:after {
+					position: absolute;
+					top: 15px;
+					right: 15px;
+					width: 30px;
+					height: 30px;
+					background: url("../img/icon-yes.png") no-repeat;
+					content: "";
+				}
 			}
 		}
 	}
@@ -248,7 +300,9 @@ body {
 }
 
 .page-footer {
-	height: 200px;
+	position: relative;
+	height: 610px;
+	overflow: hidden;
 	text-align: center;
 	&__title {
 		margin: 0;
@@ -275,10 +329,21 @@ body {
 	}
 	&__email-link {
 		text-decoration: none;
+
 		@extend .page-footer__phone;
 	}
 	&__map-image {
+		z-index: -2;
 		height: 100%;
-		background: green url("../img/bg-footer-map.jpg") 0 100% no-repeat;
+		background: url("../img/bg-footer-map.jpg") 0 -445px no-repeat;
+	}
+	&:after {
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		height: 20px;
+		content: "";
+		border: 161px solid transparent;
+		border-top: 35px solid $font-header-color;
 	}
 }

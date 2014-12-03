@@ -48,7 +48,23 @@ body {
 }
 
 .mobile-menu {
+  position: absolute;
+  width: 320px;
+  margin: 0;
+  padding: 0;
+}
+.mobile-menu__item {
   display: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #283645;
+  box-shadow: 0 1px 5px rgba(72, 84, 97, 0.15);
+  list-style: none;
+  border-bottom: 1px solid #000;
 }
 
 .download-app {
@@ -85,20 +101,20 @@ body {
 
 .features {
   position: relative;
-  padding: 10px 10px 40px;
-  background-color: #fff;
   z-index: -2;
   overflow: hidden;
+  padding: 10px 10px 55px;
+  background-color: #fff;
 }
 .features:after {
-  content: "";
   position: absolute;
-  width: 335px;
-  height: 150px;
   top: 90%;
   left: 0;
   z-index: -1;
+  width: 335px;
+  height: 150px;
   background: #f2f2f2 0 0;
+  content: "";
   -webkit-transform: rotate(-5deg);
       -ms-transform: rotate(-5deg);
           transform: rotate(-5deg);
@@ -106,8 +122,8 @@ body {
 .features__item {
   font-size: 24px;
   font-weight: 300;
-  text-align: center;
   color: #283645;
+  text-align: center;
 }
 
 .advantages {
@@ -132,8 +148,11 @@ body {
 }
 
 .feedback-slider {
+  position: relative;
+  z-index: -2;
   height: 330px;
-  padding: 25px;
+  overflow: hidden;
+  padding: 20px;
   line-height: 30px;
   text-align: center;
   background-color: #fff;
@@ -156,10 +175,23 @@ body {
 .feedback-slider__controls-img--off, .buying-options-slider__controls-img--off {
   padding: 3px;
 }
+.feedback-slider:after {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  z-index: -1;
+  width: 335px;
+  height: 150px;
+  background: #f2f2f2 0 0;
+  content: "";
+  -webkit-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
 
 .buying-options-slider-container {
   padding: 20px;
-  padding-top: 70px;
+  padding-top: 40px;
   background-color: #f2f2f2;
 }
 
@@ -203,6 +235,7 @@ body {
   list-style: none;
 }
 .buying-options-slider__item-list-item {
+  position: relative;
   padding: 20px;
   font-size: 14px;
   background-color: #fff;
@@ -210,9 +243,22 @@ body {
   border-bottom: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5;
 }
-.buying-options-slider__item-list-item:after {
-  display: block;
-  float: right;
+.buying-options-slider__item-list-item:hover {
+  background-color: #e5e5e5;
+}
+.buying-options-slider__item-list-item--off:after {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon-no.png") no-repeat;
+  content: "";
+}
+.buying-options-slider__item-list-item--on:after {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   width: 30px;
   height: 30px;
   background: url("../img/icon-yes.png") no-repeat;
@@ -225,7 +271,9 @@ body {
 }
 
 .page-footer {
-  height: 200px;
+  position: relative;
+  height: 610px;
+  overflow: hidden;
   text-align: center;
 }
 .page-footer__title {
@@ -253,6 +301,16 @@ body {
   text-decoration: none;
 }
 .page-footer__map-image {
+  z-index: -2;
   height: 100%;
-  background: green url("../img/bg-footer-map.jpg") 0 100% no-repeat;
+  background: url("../img/bg-footer-map.jpg") 0 -445px no-repeat;
+}
+.page-footer:after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 20px;
+  content: "";
+  border: 161px solid transparent;
+  border-top: 35px solid #fff;
 }
