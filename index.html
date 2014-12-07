@@ -11,8 +11,11 @@
 	<div class="wrapper">
 		<header class="page-header">
 			<div class="page-header__logo">
-				<a class="page-header__link" href="index.html">PINK
-				</a>
+				<picture class="page-header__logo-container">
+					<source class="page-header__logo-img" srcset="img/icon-logo-glasses-tablet.png" media="(min-width: 700px)">
+					<img class="page-header__logo-img" srcset="">
+				</picture>
+				<a class="page-header__link" href="index.html">PINK</a>
 				<a class="mobile-menu-open mobile-menu-open--active" href="#">
 					<img class="mobile-menu-open__img" src="img/btn-mobile-menu-open.png" height="24" width="50" alt="#">
 				</a>
@@ -26,9 +29,11 @@
 				</ul>
 			</nav>
 			<h1 class="page-header__slogan">Взгляните на жизнь иначе!</h1>
-			<div class="page-header__ad">
-				<img class="page-header__ad-img" src="img/bg-iphone.png" height="313" width="320" alt="iPhone demo">
-			</div>
+			<picture class="page-header__ad">
+				<source class="page-header__ad-img" srcset="img/bg-iphone-2x.png" media="(min-width: 700px)">
+				<source class="page-header__ad-img" srcset="img/bg-iphone.png" media="(max-width: 321px)">
+				<img class="page-header__ad-img" srcset="img/bg-iphone.png">
+			</picture>
 		</header>
 		<div class="download-app">
 			<a class="download-app__link" href="#">Скачать приложение</a><br>
@@ -44,17 +49,33 @@
 				<h2 class="features__item">Нам есть, что вам предложить!</h2>
 		</div>
 		<div class="advantages">
-			<h3 class="advantages__item">Поднимает настроение</h3>
-			<p class="advantages__item-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-			<h3 class="advantages__item">Меняет мир вокруг</h3>
-			<p class="advantages__item-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-			<h3 class="advantages__item">Заводит новых друзей</h3>
-			<p class="advantages__item-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-			<img class="advantages__item-img" src="img/bg-advantages-iphone.png" height="320" width="157" alt="advantages iphone">
+			<div class="advantages-container">
+				<h3 class="advantages__item">Поднимает настроение</h3>
+				<p class="advantages__item-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+				<h3 class="advantages__item">Меняет мир вокруг</h3>
+				<p class="advantages__item-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+				<h3 class="advantages__item">Заводит новых друзей</h3>
+				<p class="advantages__item-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+			</div>
+			<picture class="advantages__item-img-container">
+				<source class="page-header__logo-img" srcset="img/bg-advantages-iphone-2x.png" media="(min-width: 700px)">
+				<img class="advantages__item-img" src="img/bg-advantages-iphone.png" alt="advantages iphone">
+			</picture>
+		</div>
+		<div class="research">
+			<div class="research__image">
+				<img src="img/icon-research.png" height="302" width="262" alt="">
+			</div>
+			<div class="research__info">
+				<h2 class="research__info-title">Эффект за 24 часа!</h2>
+				<p class="research__info-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложений длится целые сутки!</p>
+				<a class="research__info-link" href="#">Узнать больше об исследовании</a>
+			</div>
 		</div>
 		<article class="feedback-slider">
 			<section class="feedback-slider__item">
 				<h3 class="feedback-slider__item-person">Николай Петров</h3>
+				<p class="feedback-slider__item-person-info">25 лет, водитель трамвая</p>
 				<p class="feedback-slider__item-info">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
 			</section>
 			<section class="feedback-slider__item">
@@ -91,16 +112,97 @@
 				<a class="buying-options-slider__controls-link" href="#"><img class="buying-options-slider__controls-img--off" src="img/icon-slider-off.png" height="6px" width="6px" alt="slider off"></a>
 			</div>
 			</article>
+			<div class="buying-options-table-container">
+				<table class="buying-options-table" border="1">
+					<tr class="buying-options-table-row">
+						<th class="buying-options-table-head"></th>
+						<th class="buying-options-table-head">
+							<h3 class="buying-options-table-head-title">База</h3>
+							<p class="buying-options-table-head-price">1.99 usd</p>
+						</th>
+						<th class="buying-options-table-head">
+							<h3 class="buying-options-table-head-title">Стандарт</h3>
+							<p class="buying-options-table-head-price">3.99 usd</p>
+						</th>
+						<th class="buying-options-table-head">
+							<h3 class="buying-options-table-head-title">Анлим</h3>
+							<p class="buying-options-table-head-price">9.99 usd</p>
+						</th>
+					</tr>
+					<tr class="buying-options-table-row">
+						<td class="buying-options-table-cell">Розовый фильтр</td>
+						<td class="buying-options-table-cell buying-options-table-cell--on"></td>
+						<td class="buying-options-table-cell buying-options-table-cell--on"></td>
+						<td class="buying-options-table-cell buying-options-table-cell--on"></td>
+					</tr>
+					<tr class="buying-options-table-row">
+						<td class="buying-options-table-cell">Смайлики</td>
+						<td class="buying-options-table-cell buying-options-table-cell--off"></td>
+						<td class="buying-options-table-cell buying-options-table-cell--on"></td>
+						<td class="buying-options-table-cell buying-options-table-cell--on"></td>
+					</tr>
+					<tr class="buying-options-table-row">
+						<td class="buying-options-table-cell">Комментарии</td>
+						<td class="buying-options-table-cell buying-options-table-cell--off"></td>
+						<td class="buying-options-table-cell buying-options-table-cell--off"></td>
+						<td class="buying-options-table-cell buying-options-table-cell--off"></td>
+					</tr>
+				</table>
+			</div>
 		</div>
 		<footer class="page-footer">
-			<h2 class="page-footer__title">Остались вопросы? Свяжитесь с нами!</h2>
-			<h3 class="page-footer__heading">Звоните:</h3>
-			<p class="page-footer__phone">8 (800) 1000 900</p>
-			<h3 class="page-footer__heading">Пишите:</h3>
-			<p class="page-footer__email"><a class="page-footer__email-link" href="mailto:hello@pinkapp.ru">hello@pinkapp.ru</a></p>
-			<h3 class="page-footer__heading">Приезжайте в гости:</h3>
-			<p class="page-footer__address">Санкт-Петербург, Невский проспект, д. 20</p>
-			<div class="page-footer__map-image">
+			<h2 class="page-footer__title">Остались вопросы?</h2>
+			<h2 class="page-footer__title">Свяжитесь с нами!</h2>
+			<div class="page-footer__item">
+				<h3 class="page-footer__item-heading">Звоните:</h3>
+				<p class="page-footer__item-phone">8 (800) 1000 900</p>
+			</div>
+			<div class="page-footer__item">
+				<h3 class="page-footer__item-heading">Пишите:</h3>
+				<p class="page-footer__item-email"><a class="page-footer__item-email-link" href="mailto:hello@pinkapp.ru">hello@pinkapp.ru</a></p>
+			</div>
+			<div class="page-footer__item">
+				<h3 class="page-footer__item-heading">Приезжайте в гости:</h3>
+				<p class="page-footer__item-address">Санкт-Петербург, Невский проспект, д. 20</p>
+			</div>
+			<div class="page-footer__map-image-container">
+				<div class="page-footer__map-image"></div>
+			</div>
+			<div class="page-footer__social">
+				<div class="page-footer__social-logo">
+					<a class="page-footer__social-logo-link" href="#">
+						<img class="page-footer__social-logo-img" src="img/icon-logo-footer-2x.png" height="40" width="145" alt="">
+					</a>
+				</div>
+				<div class="page-footer__social-icons">
+					<div class="page-footer__social-icons-tw">
+						<a class="page-footer__social-icons-tw-link" href="#">
+							<img class="page-footer__social-icons-tw-img" src="img/icon-social-tw.png" height="51" width="52" alt="">
+					</a>
+				</div>
+					<div class="page-footer__social-icons-fb">
+						<a class="page-footer__social-icons-fb-link" href="#">
+							<img class="page-footer__social-icons-fb-img" src="img/icon-social-fb.png" height="51" width="52" alt="">
+					</a>
+				</div>
+					<div class="page-footer__social-icons-yt">
+						<a class="page-footer__social-icons-yt-link" href="#">
+							<img class="page-footer__social-icons-yt-img" src="img/icon-social-yt.png" height="51" width="52" alt="">
+					</a>
+				</div>
+				</div>
+				<div class="page-footer__social-copyright">
+					<p class="page-footer__social-copyright-text">
+						Website by 
+						<a class="page-footer__social-copyright-link" href="#">
+							<img class="page-footer__social-copyright-img" src="img/icon-social-copyright-by.png" height="30" width="27" alt=""> 
+						</a>
+						for 
+						<a class="page-footer__social-copyright-link" href="#">
+							<img class="page-footer__social-copyright-img" src="img/icon-social-copyright-for.png" height="33" width="27" alt="">
+						</a>
+					</p>
+				</div>
 			</div>
 		</footer>
 	</div>
