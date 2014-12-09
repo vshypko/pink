@@ -859,7 +859,7 @@ body {
 	}
 	.feedback-slider {
 		padding: 0;
-		min-height: 340px;
+		min-height: 400px;
 		overflow: hidden;
 		width: 1200px;
 		&__controls {
@@ -889,7 +889,7 @@ body {
 			width: 100px;
 			display: block;
 			margin: 0 auto;
-			margin-top: -60px;
+			margin-top: 0;
 		}
 		&-left-arrow {
 			display: block;
