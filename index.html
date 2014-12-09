@@ -11,10 +11,13 @@
 	<div class="wrapper">
 		<header class="page-header">
 			<div class="page-header__logo">
-				<picture class="page-header__logo-container">
-					<source class="page-header__logo-img" srcset="img/icon-logo-glasses-tablet.png" media="(min-width: 700px)">
-					<img class="page-header__logo-img" srcset="">
-				</picture>
+				<a class="page-header__logo-container" href="#">
+					<picture class="page-header__logo-container">
+						<source class="page-header__logo-img" srcset="img/icon-logo-glasses-desktop.png" media="(min-width: 1200px)">
+						<source class="page-header__logo-img" srcset="img/icon-logo-glasses-tablet.png" media="(min-width: 700px)">
+						<img class="page-header__logo-img" srcset="">
+					</picture>
+				</a>
 				<a class="page-header__link" href="index.html">PINK</a>
 				<a class="mobile-menu-open mobile-menu-open--active" href="#">
 					<img class="mobile-menu-open__img" src="img/btn-mobile-menu-open.png" height="24" width="50" alt="#">
@@ -22,14 +25,15 @@
 			</div>
 			<nav class="mobile-menu-nav">
 				<ul class="mobile-menu">
-					<li class="mobile-menu__item">Информация</li>
-					<li class="mobile-menu__item">Возможности</li>
-					<li class="mobile-menu__item">Отзывы</li>
-					<li class="mobile-menu__item">Стоимость</li>
+					<li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">Информация</a></li>
+					<li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">Возможности</a></li>
+					<li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">Отзывы</a></li>
+					<li class="mobile-menu__item"><a class="mobile-menu__item-link" href="#">Стоимость</a></li>
 				</ul>
 			</nav>
 			<h1 class="page-header__slogan">Взгляните на жизнь иначе!</h1>
 			<picture class="page-header__ad">
+				<source class="page-header__ad-img" srcset="img/bg-iphone-3x.png" media="(min-width: 1200px)">
 				<source class="page-header__ad-img" srcset="img/bg-iphone-2x.png" media="(min-width: 700px)">
 				<source class="page-header__ad-img" srcset="img/bg-iphone.png" media="(max-width: 321px)">
 				<img class="page-header__ad-img" srcset="img/bg-iphone.png">
@@ -50,16 +54,32 @@
 		</div>
 		<div class="advantages">
 			<div class="advantages-container">
-				<h3 class="advantages__item">Поднимает настроение</h3>
-				<p class="advantages__item-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-				<h3 class="advantages__item">Меняет мир вокруг</h3>
-				<p class="advantages__item-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-				<h3 class="advantages__item">Заводит новых друзей</h3>
-				<p class="advantages__item-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+				<div class="advantages__item-container">
+					<picture class="advantages__item-img-block">
+						<img src="img/icon-advantages-1.png" height="300" width="185" alt="">
+					</picture>
+					<h3 class="advantages__item">Поднимает настроение</h3>
+					<p class="advantages__item-info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+				</div>
+				<div class="advantages__item-container">
+					<picture class="advantages__item-img-block">
+						<img src="img/icon-advantages-2.png" height="300" width="185" alt="">
+					</picture>
+					<h3 class="advantages__item">Меняет мир вокруг</h3>
+					<p class="advantages__item-info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+				</div>
+				<div class="advantages__item-container">
+					<picture class="advantages__item-img-block">
+						<img src="img/icon-advantages-3.png" height="300" width="185" alt="">
+					</picture>
+					<h3 class="advantages__item">Заводит новых друзей</h3>
+					<p class="advantages__item-info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+				</div>
 			</div>
 			<picture class="advantages__item-img-container">
-				<source class="page-header__logo-img" srcset="img/bg-advantages-iphone-2x.png" media="(min-width: 700px)">
-				<img class="advantages__item-img" src="img/bg-advantages-iphone.png" alt="advantages iphone">
+				<source class="advantages__item-img" srcset="img/bg-advantages-iphone-2x.png" media="(min-width: 700px)">
+				<source class="advantages__item-img" srcset="img/bg-advantages-iphone.png" media="(max-width: 700px)">
+				<img class="advantages__item-img" src="img/bg-advantages-iphone-1.png" alt="advantages iphone">
 			</picture>
 		</div>
 		<div class="research">
@@ -67,12 +87,21 @@
 				<img src="img/icon-research.png" height="302" width="262" alt="">
 			</div>
 			<div class="research__info">
-				<h2 class="research__info-title">Эффект за 24 часа!</h2>
+				<h2 class="research__info-title">Эффект на 24 часа!</h2>
 				<p class="research__info-text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложений длится целые сутки!</p>
 				<a class="research__info-link" href="#">Узнать больше об исследовании</a>
 			</div>
 		</div>
 		<article class="feedback-slider">
+			<div class="feedback-slider-left-arrow">
+				<img class="feedback-slider-left-arrow-img" src="img/icon-feedback-left-arrow.png" height="42" width="22" alt="">
+			</div>
+			<div class="feedback-slider-right-arrow">
+				<img class="feedback-slider-right-arrow-img" src="img/icon-feedback-right-arrow.png" height="42" width="22" alt="">
+			</div>
+			<div class="feedback-slider__img-container">
+				<img class="feedback-slider__img" src="img/icon-feedback-quotes.png" height="64" width="79" alt="">
+			</div>
 			<section class="feedback-slider__item">
 				<h3 class="feedback-slider__item-person">Николай Петров</h3>
 				<p class="feedback-slider__item-person-info">25 лет, водитель трамвая</p>
@@ -171,7 +200,11 @@
 			<div class="page-footer__social">
 				<div class="page-footer__social-logo">
 					<a class="page-footer__social-logo-link" href="#">
-						<img class="page-footer__social-logo-img" src="img/icon-logo-footer-2x.png" height="40" width="145" alt="">
+						<picture class="page-footer__social-logo-container">
+							<source class="page-footer__social-logo-img" srcset="img/icon-logo-footer-3x.png" media="(min-width: 1200px)">
+							<source class="page-footer__social-logo-img" srcset="img/icon-logo-footer-2x.png" media="(min-width: 700px)">
+							<img class="page-header__logo-img" srcset="">
+						</picture>
 					</a>
 				</div>
 				<div class="page-footer__social-icons">

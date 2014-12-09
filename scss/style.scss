@@ -29,9 +29,9 @@ body {
 }
 
 .wrapper {
-	min-width: 300px;
+	min-width: 310px;
 	max-width: 1440px;
-	width: $wrapper-width;
+	width: 100%;
 	margin: $margin-center;
 }
 
@@ -39,13 +39,12 @@ body {
 	overflow: hidden;
 	color: $font-header-color;
 	background: $header-bg-color url("../img/bg-header.jpg") no-repeat 50% 0;
+	z-index: -1;
 	&__logo {
-		height: 45px;
 		padding: 2%;
 		background-color: $top-menu-bg-color;
 	}
 	&__link {
-		padding-left: 2%;
 		font-family: "Gotham Rounded Book", sans-serif;
 		font-size: 32px;
 		line-height: 50px;
@@ -61,6 +60,7 @@ body {
 		text-align: center;
 	}
 	&__ad {
+		float: left;
 		&-img {
 			text-align: center;
 			margin: 0;
@@ -85,16 +85,20 @@ body {
 		box-shadow: 0 1px 5px $mobile-menu-border-shadow;
 		list-style: none;
 		border-bottom: 1px solid $mobile-menu-border-color;
+		&-link {
+			text-decoration: none;
+			color: #fff;
+		}
 	}
 	&-open__img {
 		float: right;
-		padding: 1.5%;
+		padding: 2%;
 	}
 }
 
 .download-app {
 	max-height: 215px;
-	padding: 9% 6%;
+	padding: 5%;
 	color: $font-header-color;
 	background-color: $header-bg-color;
 	&__mobile {
@@ -103,7 +107,7 @@ body {
 	&__link {
 		display: block;
 		margin: $margin-center;
-		padding: 13px 0;
+		padding: 3%;
 		width: 275px;
 		font-size: $font-size-large;
 		font-weight: $font-weight-regular;
@@ -182,6 +186,9 @@ body {
 		&-img {
 			margin-top: 40px;
 			text-align: center;
+			&-block {
+				display: none;
+			}
 		}
 	}
 }
@@ -237,6 +244,15 @@ body {
 		background: $advantages-bg-color 0 0;
 		content: "";
 		transform: rotate(-3deg);
+	}
+	&__img-container {
+		display: none;
+	}
+	&-left-arrow {
+		display: none;
+	}
+	&-right-arrow {
+		display: none;
 	}
 }
 
@@ -409,7 +425,7 @@ body {
 		height: 740px;
 		&__logo {
 			height: 40px;
-			padding: 5%;
+			padding: 3% 5%;
 			background-color: $top-menu-bg-color;
 		}
 		&__slogan {
@@ -439,7 +455,6 @@ body {
 		&__link {
 			margin-bottom: 20px;
 		}
-
 		&__info {
 			font-size: 18px;
 			line-height: 24px;
@@ -461,6 +476,7 @@ body {
 		}
 	}
 	.advantages {
+		margin: 0 auto;
 		&-container {
 			width: 300px;
 			margin-left: 310px;
@@ -486,20 +502,23 @@ body {
 	}
 	.research {
 		display: block;
+		width: 90%;
+		min-height: 300px;
+		margin: 0 auto;
 		&__image {
 			float: left;
-			padding: 5%;
+			padding: 5% 3%;
 			margin-top: -55px;
 		}
 		&__info {
-			width: 305px;
-			margin-left: 330px;
+			width: 48%;
+			margin-left: 310px;
 			margin-top: 80px;
 			padding: 2%;
 			&-title {
 				font-size: 30px;
 				line-height: 36px;
-				width: 200px;
+				width: 60%;
 				margin: 0;
 			}
 			&-text {
@@ -674,6 +693,273 @@ body {
 				&-img {
 					vertical-align: bottom;
 				}
+			}
+		}
+	}
+}
+
+@media (min-width: 985px) {
+	.page-header {
+		&__ad {
+			display: inline-block;
+			margin-top: 250px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.page-header {
+		position: relative;
+		width: 100%;
+		height: 853px;
+		background: $header-bg-color url("../img/bg-header-3x.jpg") no-repeat 50% 0;
+		&__logo {
+			padding: 3% 12%;
+		}
+		&__link {
+			display: none;
+		}
+		&__ad {
+			margin-top: -8px;
+			float: right;
+		}
+		&__slogan {
+			margin-left: 130px;
+			margin-top: 95px;
+			font-size: 50px;
+			width: 280px;
+		}
+	}
+	.mobile-menu {
+		display: block;
+		&-open {
+			display: none;
+		}
+		&__item {
+			position: absolute;
+			top: 20px;
+			left: 0;
+			padding: 10px;
+			display: inline;
+			background-color: transparent;
+			border: none;
+			display: inline-block;
+			margin-top: -100px;
+			margin-left: 500px;
+			text-transform: none;
+			font-weight: 300;
+			box-shadow: none;
+			&:nth-child(1) {
+				margin-left: 500px;
+			}
+			&:nth-child(2) {
+				margin-left: 680px;
+			}
+			&:nth-child(3) {
+				margin-left: 870px;
+			}
+			&:nth-child(4) {
+				margin-left: 1000px;
+			}
+		}
+	}
+	.download-app {
+		margin-top: -460px;
+		margin-left: 75px;
+		&__link {
+			padding: 4%;
+			font-size: 21px;
+		}
+		&__mobile {
+			margin: 30px 0;
+		}
+	}
+
+	.features {
+		margin: 0;
+		padding: 10% 5% 25%;
+		margin-top: -25px;
+		&__item {
+			color: #283645;
+			font-size: 50px;
+			&:last-child {
+				width: 500px;
+			}
+		}
+		&:after {
+			position: absolute;
+			top: 82%;
+			left: 0;
+			z-index: -1;
+			width: 200%;
+			height: 1000px;
+			background: $advantages-bg-color 0 0;
+			content: "";
+			transform: rotate(-4deg);
+			}
+	}
+
+	.advantages {
+		margin: 0 auto;
+		margin-top: -130px;
+		background-color: transparent;
+		&-container {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+		&__item {
+			text-align: center;
+			font-size: 30px;
+			&-info {
+				text-align: center;
+				line-height: 30px;
+				font-size: 18px;
+			}
+			&-container {
+				vertical-align: top;
+				width: 240px;
+				height: 1200px;
+				display: inline-block;
+				&:nth-child(2) {
+					margin: 0 100px;
+				}
+			}
+			&-img {
+				&-container {
+					display: none;
+				}
+				&-block {
+					display: block;
+				}
+			}
+		}
+	}
+	.research {
+		background-color: $advantages-bg-color;
+		margin-top: -200px;
+		width: 100%;
+		&__image {
+			padding: 2% 5%;
+		}
+		&__info {
+			width: 60%;
+			margin-left: 380px;
+			&-title {
+				font-size: 30px;
+				padding: 2% 0;
+			}
+			&-link {
+				font-size: 18px;
+			}
+			&-text {
+				font-size: 18px;
+			}
+		}
+	}
+	.feedback-slider {
+		padding: 0;
+		min-height: 340px;
+		overflow: hidden;
+		width: 1200px;
+		&__controls {
+			display: none;
+		}
+		&__item {
+			&-info {
+				width: 100%;
+				margin-top: 70px;
+				margin-left: 23%;
+				display: block;
+			}
+			&-person {
+				margin-top: 80px;
+				margin-left: 80px;
+				font-size: 24px;
+				line-height: 30px;
+				&-info {
+					font-size: 18px;
+					line-height: 30px;
+					margin-top: 80px;
+					margin-left: 85px;
+				}
+			}
+		}
+		&__img-container {
+			width: 100px;
+			display: block;
+			margin: 0 auto;
+			margin-top: -60px;
+		}
+		&-left-arrow {
+			display: block;
+			float: left;
+			margin-top: 70px;
+			margin-left: 90px;
+		}
+		&-right-arrow {
+			display: block;
+			float: right;
+			margin-top: 70px;
+			margin-right: 120px;
+		}
+		&:after {
+			position: absolute;
+			top: 85%;
+			left: 0;
+			z-index: -1;
+			width: 150%;
+			height: 100px;
+			background: $advantages-bg-color 0 0;
+			content: "";
+			transform: rotate(-3deg);
+		}
+	}
+	.buying-options-table {
+		overflow: hidden;
+		margin-top: -70px;
+		max-width: 935px;
+		&-head {
+			padding: 2%;
+			&-price {
+				font-size: 24px;
+				line-height: 30px;
+			}
+		}
+		&-cell {
+			padding: 1.5%;
+			font-size: 18px;
+			line-height: 30px;
+			width: 235px;
+		}
+	}
+	.page-footer {
+		&__title {
+			font-size: 50px;
+		}
+		&__map-image {
+			background: url("../img/bg-footer-map-3x.jpg") 50% bottom no-repeat;
+			&:before {
+				content: "";
+				position: absolute;
+				top: -5%;
+				left: 10%;
+				border: 700px solid transparent;
+				border-top: 140px solid $font-header-color;
+			}
+		}
+		&__social {
+			padding: 6%;
+			height: 65px;
+			background-color: #fff;
+			&-logo {
+				margin: 0;
+			}
+			&-icons {
+				margin: 0 250px;
+			}
+			&-copyright {
+				margin: 0;
 			}
 		}
 	}
