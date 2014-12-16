@@ -1,5 +1,8 @@
+@import "_reset";
+@import "_normalize";
 @font-face {
 	font-family: "Gotham Rounded Book";
+
 	src: url("../font/gotham-rounded-book.otf") format("opentype");
 }
 $header-bg-color: #1d2631;
@@ -89,7 +92,7 @@ body {
 }
 
 .download-app {
-	height: 220px;
+	height: 215px;
 	padding: 25px;
 	color: $font-header-color;
 	background-color: $header-bg-color;
@@ -116,6 +119,7 @@ body {
 	&__info {
 		font-size: $font-size-basic;
 		font-weight: $font-weight-light;
+		line-height: 1.6;
 		text-align: center;
 	}
 }
@@ -138,6 +142,7 @@ body {
 		transform: rotate(-5deg);
 	}
 	&__item {
+		padding: 8%;
 		font-size: $font-size-x-large;
 		font-weight: $font-weight-light;
 		color: $features-item-color;
@@ -152,6 +157,8 @@ body {
 	text-align: center;
 	background-color: $advantages-bg-color;
 	&__item {
+		padding: 5%;
+		padding-top: 8%;
 		font-size: $font-size-large;
 		font-weight: $font-weight-regular;
 		&-info {
@@ -161,17 +168,21 @@ body {
 			line-height: 1.8em;
 		}
 		&-img {
-			padding-top: 18px;
+			padding-top: 35px;
+		}
+		&:nth-child(5) {
+			padding-top: 11%;
 		}
 	}
 }
 
 .feedback-slider {
 	position: relative;
-	z-index: -2;
+	z-index: -1;
 	height: 330px;
 	overflow: hidden;
-	padding: 20px;
+	padding: 6% 8%;
+	padding-top: 12%;
 	line-height: $line-height-item;
 	text-align: center;
 	background-color: $font-header-color;
@@ -180,6 +191,7 @@ body {
 		font-weight: $font-weight-regular;
 	}
 	&__item-info {
+		padding-top: 6%;
 		font-size: $font-size-basic;
 		font-weight: $font-weight-light;
 	}
@@ -251,7 +263,7 @@ body {
 		list-style: none;
 		&-item {
 			position: relative;
-			padding: 20px;
+			padding: 8%;
 			font-size: $font-size-basic;
 			background-color: $font-header-color;
 			border-right: 2px solid $buying-options-list-border-color;
@@ -301,7 +313,7 @@ body {
 
 .page-footer {
 	position: relative;
-	height: 610px;
+	height: 605px;
 	overflow: hidden;
 	text-align: center;
 	&__title {
@@ -314,7 +326,7 @@ body {
 	}
 	&__heading {
 		margin: 0;
-		padding: 0;
+		padding: 3.1%;
 		font-size: $font-size-large;
 		font-weight: $font-weight-bold;
 	}
@@ -325,6 +337,7 @@ body {
 		padding: 0 20px 25px;
 		font-size: $font-size-x-large;
 		font-weight: $font-weight-light;
+		line-height: 1.15;
 		color: $footer-font-color;
 	}
 	&__email-link {
