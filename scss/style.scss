@@ -72,12 +72,12 @@ body {
 }
 
 .mobile-menu {
+	display: none;
 	position: absolute;
 	width: 320px;
 	margin: 0;
 	padding: 0;
 	&__item {
-		display: none;
 		padding: 15px;
 		font-size: $font-size-large;
 		font-weight: $font-weight-bold;
@@ -88,6 +88,7 @@ body {
 		box-shadow: 0 1px 5px $mobile-menu-border-shadow;
 		list-style: none;
 		border-bottom: 1px solid $mobile-menu-border-color;
+		border-top: 1px solid #495562;
 	}
 }
 

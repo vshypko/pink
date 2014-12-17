@@ -492,13 +492,13 @@ body {
 }
 
 .mobile-menu {
+  display: none;
   position: absolute;
   width: 320px;
   margin: 0;
   padding: 0;
 }
 .mobile-menu__item {
-  display: none;
   padding: 15px;
   font-size: 18px;
   font-weight: 900;
@@ -509,6 +509,7 @@ body {
   box-shadow: 0 1px 5px rgba(72, 84, 97, 0.15);
   list-style: none;
   border-bottom: 1px solid #000;
+  border-top: 1px solid #495562;
 }
 
 .download-app {
