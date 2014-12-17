@@ -468,6 +468,7 @@ body {
   height: 45px;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid #000;
 }
 .page-header__link {
   padding-left: 5px;
@@ -510,6 +511,10 @@ body {
   list-style: none;
   border-bottom: 1px solid #000;
   border-top: 1px solid #495562;
+}
+.mobile-menu__item-link {
+  text-decoration: none;
+  color: #fff;
 }
 
 .download-app {

@@ -47,6 +47,7 @@ body {
 		height: 45px;
 		padding: 10px;
 		background-color: $top-menu-bg-color;
+		border-bottom: 1px solid #000;
 	}
 	&__link {
 		padding-left: 5px;
@@ -89,6 +90,10 @@ body {
 		list-style: none;
 		border-bottom: 1px solid $mobile-menu-border-color;
 		border-top: 1px solid #495562;
+		&-link {
+			text-decoration: none;
+			color: $font-header-color;
+		}
 	}
 }
 
